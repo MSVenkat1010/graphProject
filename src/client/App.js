@@ -23,6 +23,11 @@ export default function App() {
       },
     },
   ];
+console.log("check=>",  ["10","29"].map((el,i)=>i?
+el.split("").slice(0,2).join("")
+:
+el)
+.join("."))
   const [posts, setPosts] = useState(initialPosts);
   const [postContent, setPostContent] = useState("");
   const handleSubmit = (event) => {
